@@ -4,7 +4,7 @@ import base64
 # ---------------- PAGE CONFIG (TOUJOURS EN PREMIER) ----------------
 st.set_page_config(
     page_title="OG££ FR££D0 - Officiel",
-    page_icon="og3.png",
+    page_icon="logo.png",  # mets ton logo en PNG/JPG dans le même dossier
     layout="centered"
 )
 
@@ -12,6 +12,7 @@ st.set_page_config(
 youtube = "https://www.youtube.com/@MRKNOWLEDGE-o4m"
 tiktok = "https://www.tiktok.com/@og_malien"
 instagram = "https://www.instagram.com/poloniumboy210/"
+twitter = "https://x.com/ib244339"
 
 # ------------------- BARRE RÉSEAUX EN HAUT À DROITE -------------------
 st.markdown(
@@ -36,7 +37,7 @@ st.markdown(
         margin-right: 6px;
     }}
     .top-social img {{
-        width: 28px;
+        width: 26px;
         transition: transform 0.3s;
     }}
     .top-social img:hover {{
@@ -54,6 +55,9 @@ st.markdown(
         </a>
         <a href="{instagram}" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png">
+        </a>
+        <a href="{twitter}" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png">
         </a>
     </div>
     """,
@@ -78,7 +82,7 @@ def set_bg(image_file):
         unsafe_allow_html=True
     )
 
-# Définir l'image de fond
+# Image de fond
 set_bg("og2.jpg")
 
 # ------------------- STYLE SUPPLÉMENTAIRE -------------------
@@ -88,9 +92,8 @@ st.markdown(
     h1, h2, h3, p {
         text-align: center;
         color: white;
-        font-family: 'Arial', sans-serif;
+        font-family: Arial, sans-serif;
     }
-
     .social-icon img {
         transition: transform 0.3s;
     }
@@ -114,7 +117,7 @@ st.divider()
 st.markdown("<h2>👤 À propos de moi</h2>", unsafe_allow_html=True)
 st.markdown(
     """
-    <p style='color:white; font-size:18px;'>
+    <p style='font-size:18px;'>
     Je suis un jeune créateur de contenu passionné par la géopolitique et la technologie dans le monde et en Afrique.<br><br>
     Passionné du continent africain et de son développement.<br><br>
     Mon objectif est d’informer, d’inspirer, d’éduquer et de construire une grande communauté consciente africaine.<br><br>
@@ -146,8 +149,13 @@ st.markdown(
                 <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" width="60">
             </a>
         </div>
+        <div class="social-icon">
+            <a href="{twitter}" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="60">
+            </a>
+        </div>
     </div>
-    <p style="text-align:center;margin-top:10px;">👉 Cliquez sur une icône pour me rejoindre</p>
+    <p style="margin-top:10px;">👉 Cliquez sur une icône pour me rejoindre</p>
     """,
     unsafe_allow_html=True
 )

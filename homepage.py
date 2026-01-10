@@ -4,7 +4,7 @@ import base64
 # ---------------- PAGE CONFIG (TOUJOURS EN PREMIER) ----------------
 st.set_page_config(
     page_title="OG££ FR££D0 - Officiel",
-    page_icon="logo.png",  # mets ton logo en PNG/JPG dans le même dossier
+    page_icon="og3.png",  # mets ton logo en PNG/JPG dans le même dossier
     layout="centered"
 )
 
@@ -164,4 +164,5 @@ st.divider()
 
 # ------------------- PIED DE PAGE -------------------
 st.markdown("<p>© 2026 - OG££ FR££D0 | Tous droits réservés</p>", unsafe_allow_html=True)
+
 

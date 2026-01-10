@@ -4,7 +4,7 @@ import base64
 # ---------------- PAGE CONFIG (TOUJOURS EN PREMIER) ----------------
 st.set_page_config(
     page_title="OG££ FR££D0 - Officiel",
-    page_icon="logo.png",  # mets ton logo en PNG/JPG dans le même dossier
+    page_icon="logo.png",  # logo local
     layout="centered"
 )
 
@@ -43,6 +43,42 @@ st.markdown(
     .top-social img:hover {{
         transform: scale(1.2);
     }}
+
+    /* Styles globaux */
+    h1, h2, h3, p {{
+        text-align: center;
+        color: white;
+        font-family: Arial, sans-serif;
+    }}
+    .social-icon img {{
+        transition: transform 0.3s;
+    }}
+    .social-icon img:hover {{
+        transform: scale(1.2);
+    }}
+
+    /* Logo X en SVG (officiel) */
+    .x-link {{
+        width: 26px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }}
+    .x-link.big {{
+        width: 60px;
+        height: 60px;
+    }}
+    .x-svg {{
+        width: 100%;
+        height: 100%;
+        fill: white;
+        transition: transform 0.3s;
+    }}
+    .x-link:hover .x-svg {{
+        transform: scale(1.2);
+    }}
     </style>
 
     <div class="top-social">
@@ -56,8 +92,10 @@ st.markdown(
         <a href="{instagram}" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png">
         </a>
-        <a href="{twitter}" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png">
+        <a href="{twitter}" target="_blank" class="x-link">
+            <svg class="x-svg" viewBox="0 0 1200 1227" xmlns="http://www.w3.org/2000/svg">
+                <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.797 619.934L144.011 79.6944H306.615L611.412 515.685L658.78 583.579L1055.08 1146.68H892.476L569.165 687.854V687.828Z"/>
+            </svg>
         </a>
     </div>
     """,
@@ -84,26 +122,6 @@ def set_bg(image_file):
 
 # Image de fond
 set_bg("og2.jpg")
-
-# ------------------- STYLE SUPPLÉMENTAIRE -------------------
-st.markdown(
-    """
-    <style>
-    h1, h2, h3, p {
-        text-align: center;
-        color: white;
-        font-family: Arial, sans-serif;
-    }
-    .social-icon img {
-        transition: transform 0.3s;
-    }
-    .social-icon img:hover {
-        transform: scale(1.2);
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 # ------------------- HEADER -------------------
 st.image("og.jpg", use_container_width=True)
@@ -133,7 +151,7 @@ st.markdown("<h2>🌍 Rejoins-moi ici</h2>", unsafe_allow_html=True)
 
 st.markdown(
     f"""
-    <div style="display:flex;justify-content:center;gap:40px;">
+    <div style="display:flex;justify-content:center;gap:40px;align-items:center;">
         <div class="social-icon">
             <a href="{youtube}" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="60">
@@ -149,11 +167,11 @@ st.markdown(
                 <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" width="60">
             </a>
         </div>
-        <div class="social-icon">
-            <a href="{twitter}" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="60">
-            </a>
-        </div>
+        <a href="{twitter}" target="_blank" class="x-link big">
+            <svg class="x-svg" viewBox="0 0 1200 1227" xmlns="http://www.w3.org/2000/svg">
+                <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.797 619.934L144.011 79.6944H306.615L611.412 515.685L658.78 583.579L1055.08 1146.68H892.476L569.165 687.854V687.828Z"/>
+            </svg>
+        </a>
     </div>
     <p style="margin-top:10px;">👉 Cliquez sur une icône pour me rejoindre</p>
     """,

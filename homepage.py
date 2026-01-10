@@ -4,7 +4,7 @@ import base64
 # ---------------- PAGE CONFIG (TOUJOURS EN PREMIER) ----------------
 st.set_page_config(
     page_title="OG££ FR££D0 - Officiel",
-    page_icon="og3.png",  # logo local
+    page_icon="logo.png",  # mets ton logo en PNG/JPG dans le même dossier
     layout="centered"
 )
 
@@ -57,7 +57,7 @@ st.markdown(
             <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png">
         </a>
         <a href="{twitter}" target="_blank">
-            <img src="x.png">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png">
         </a>
     </div>
     """,
@@ -151,7 +151,7 @@ st.markdown(
         </div>
         <div class="social-icon">
             <a href="{twitter}" target="_blank">
-                <img src="x.png" width="60">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="60">
             </a>
         </div>
     </div>

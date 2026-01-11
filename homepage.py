@@ -139,7 +139,7 @@ st.markdown(
     Je suis un jeune créateur de contenu passionné par la géopolitique et la technologie dans le monde et en Afrique.<br><br>
     Passionné du continent africain et de son développement.<br><br>
     Mon objectif est d’informer, d’inspirer, d’éduquer et de construire une grande communauté consciente africaine.<br><br>
-    Je veux ouvrir les yeux de la jeunesse africaine.
+    
     </p>
     """,
     unsafe_allow_html=True
@@ -182,4 +182,5 @@ st.divider()
 
 # ------------------- PIED DE PAGE -------------------
 st.markdown("<p>© 2026 - OG££ FR££D0 | Tous droits réservés</p>", unsafe_allow_html=True)
+
 

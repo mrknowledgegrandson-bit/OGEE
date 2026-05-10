@@ -12,7 +12,7 @@ st.set_page_config(
 youtube = "https://www.youtube.com/@MRKNOWLEDGE-o4m"
 tiktok = "https://www.tiktok.com/@og_malien"
 instagram = "https://www.instagram.com/poloniumboy210/"
-twitter = "https://x.com/ib244339"
+twitter = ""
 
 # ------------------- BARRE RÉSEAUX EN HAUT À DROITE -------------------
 st.markdown(

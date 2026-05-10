@@ -9,9 +9,9 @@ st.set_page_config(
 )
 
 # ------------------- LIENS RÉSEAUX -------------------
-youtube = "https://www.youtube.com/@MRKNOWLEDGE-o4m"
-tiktok = "https://www.tiktok.com/@og_malien"
-instagram = "https://www.instagram.com/poloniumboy210/"
+youtube = "https://www.youtube.com/@MR_IBRIM/videos"
+tiktok = "https://www.tiktok.com/@og_3fois"
+instagram = "https://www.instagram.com/bigson_ibrim/"
 twitter = ""
 
 # ------------------- BARRE RÉSEAUX EN HAUT À DROITE -------------------
